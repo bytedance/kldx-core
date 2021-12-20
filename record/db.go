@@ -1,7 +1,6 @@
 package record
 
-type DB struct {}
-
-func newDB() *DB {
-	return &DB{}
+type IDB interface {
+	Object(objectApiName string) IObject
 }
+
