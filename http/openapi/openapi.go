@@ -2,11 +2,11 @@ package openapi
 
 import (
 	"bytes"
-	cConstants "code.byted.org/apaas/goapi_common/constants"
-	cExceptions "code.byted.org/apaas/goapi_common/exceptions"
-	cHttp "code.byted.org/apaas/goapi_common/http"
-	"code.byted.org/apaas/goapi_core/http"
-	"code.byted.org/apaas/goapi_core/structs"
+	cConstants "github.com/kldx/common/constants"
+	cExceptions "github.com/kldx/common/exceptions"
+	cHttp "github.com/kldx/common/http"
+	"github.com/kldx/core/http"
+	"github.com/kldx/core/structs"
 	"encoding/json"
 	"github.com/tidwall/gjson"
 	"io"
