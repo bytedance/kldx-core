@@ -1,7 +1,7 @@
 package resources
 
 import (
-	"code.byted.org/apaas/goapi_core/common/utils"
+	"github.com/kldx/core/common/utils"
 	"os"
 	"testing"
 )

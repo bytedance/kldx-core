@@ -1,12 +1,12 @@
 package record_impl
 
 import (
-	cExceptions "code.byted.org/apaas/goapi_common/exceptions"
-	"code.byted.org/apaas/goapi_core/common/constants"
-	"code.byted.org/apaas/goapi_core/http/openapi"
-	"code.byted.org/apaas/goapi_core/record"
-	op "code.byted.org/apaas/goapi_core/record/operator"
-	"code.byted.org/apaas/goapi_core/structs"
+	cExceptions "github.com/kldx/common/exceptions"
+	"github.com/kldx/core/common/constants"
+	"github.com/kldx/core/http/openapi"
+	"github.com/kldx/core/record"
+	op "github.com/kldx/core/record/operator"
+	"github.com/kldx/core/structs"
 	"encoding/json"
 	"reflect"
 )

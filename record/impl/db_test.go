@@ -1,8 +1,8 @@
 package record_impl
 
 import (
-	"code.byted.org/apaas/goapi_core/common/utils"
-	"code.byted.org/apaas/goapi_core/record/condition"
+	"github.com/kldx/core/common/utils"
+	"github.com/kldx/core/record/condition"
 	"testing"
 )
 

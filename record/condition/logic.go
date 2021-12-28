@@ -1,6 +1,6 @@
 package cond
 
-import "code.byted.org/apaas/goapi_core/record/operator"
+import "github.com/kldx/core/record/operator"
 
 type Logic struct {
 	Type        string

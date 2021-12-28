@@ -1,9 +1,9 @@
 package http
 
 import (
-	cHttp "code.byted.org/apaas/goapi_common/http"
-	cStructs "code.byted.org/apaas/goapi_common/structs"
-	cUtils "code.byted.org/apaas/goapi_common/utils"
+	cHttp "github.com/kldx/common/http"
+	cStructs "github.com/kldx/common/structs"
+	cUtils "github.com/kldx/common/utils"
 	"net/http"
 	"sync"
 	"time"
