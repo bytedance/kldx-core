@@ -1,6 +1,6 @@
 package cond
 
-import "github.com/kldx/core/record/operator"
+import "code.byted.org/apaas/goapi_core/record/operator"
 
 type A []interface{}
 type M map[string]interface{}

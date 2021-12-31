@@ -1,8 +1,8 @@
-module github.com/kldx/core
+module code.byted.org/apaas/goapi_core
 
-go 1.15
+go 1.16
 
 require (
-	github.com/kldx/common v0.0.0-20211227104933-0836e4920540
+	code.byted.org/apaas/goapi_common v0.0.0-20211231093743-155dd9b1d89b
 	github.com/tidwall/gjson v1.7.3
 )

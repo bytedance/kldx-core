@@ -1,7 +1,7 @@
 package openapi
 
 import (
-	"github.com/kldx/core/structs"
+	"code.byted.org/apaas/goapi_core/structs"
 	"encoding/json"
 	"fmt"
 	"testing"

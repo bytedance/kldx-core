@@ -1,6 +1,6 @@
 package record_impl
 
-import "github.com/kldx/core/record"
+import "code.byted.org/apaas/goapi_core/record"
 
 type DB struct {}
 

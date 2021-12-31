@@ -1,7 +1,7 @@
 package record
 
 import (
-	"github.com/kldx/core/structs"
+	"code.byted.org/apaas/goapi_core/structs"
 )
 
 type AsyncTaskResult struct {

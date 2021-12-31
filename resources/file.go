@@ -2,9 +2,9 @@ package resources
 
 import (
 	"bytes"
-	cExceptions "github.com/kldx/common/exceptions"
-	"github.com/kldx/core/http/openapi"
-	"github.com/kldx/core/structs"
+	cExceptions "code.byted.org/apaas/goapi_common/exceptions"
+	"code.byted.org/apaas/goapi_core/http/openapi"
+	"code.byted.org/apaas/goapi_core/structs"
 	"io"
 	"os"
 )
