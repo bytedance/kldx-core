@@ -2,7 +2,7 @@ package record_impl
 
 import (
 	"code.byted.org/apaas/goapi_core/common/utils"
-	"code.byted.org/apaas/goapi_core/record/condition"
+	"code.byted.org/apaas/goapi_core/db/cond"
 	"testing"
 )
 

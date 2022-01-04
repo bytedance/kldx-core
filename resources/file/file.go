@@ -1,4 +1,4 @@
-package resources
+package file
 
 import (
 	"bytes"
@@ -16,7 +16,7 @@ type IFile interface {
 	Download(fileId string) ([]byte, error)
 }
 
-type File struct {}
+type File struct{}
 
 func NewFile() *File {
 	return &File{}
@@ -41,4 +41,3 @@ func (f *File) UploadByBuffer(fileName string, buffer []byte) (*structs.FileUplo
 func (f *File) Download(fileId string) ([]byte, error) {
 	return openapi.DownloadFile(fileId)
 }
-

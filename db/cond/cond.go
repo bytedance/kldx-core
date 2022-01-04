@@ -1,6 +1,6 @@
 package cond
 
-import "code.byted.org/apaas/goapi_core/record/operator"
+import "code.byted.org/apaas/goapi_core/db/op"
 
 type A []interface{}
 type M map[string]interface{}

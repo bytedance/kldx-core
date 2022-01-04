@@ -1,4 +1,4 @@
-package resources
+package file
 
 import (
 	"code.byted.org/apaas/goapi_core/common/utils"
