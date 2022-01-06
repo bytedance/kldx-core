@@ -1,6 +1,6 @@
 package db
 
-import "code.byted.org/apaas/goapi_core/structs"
+import "github.com/bytedance/kldx-core/structs"
 
 type IDB interface {
 	Object(objectApiName string) IObject

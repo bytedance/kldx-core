@@ -1,8 +1,8 @@
 package core
 
 import (
-	"code.byted.org/apaas/goapi_core/common/utils"
-	"code.byted.org/apaas/goapi_core/db/field_type"
+	"github.com/bytedance/kldx-core/common/utils"
+	"github.com/bytedance/kldx-core/db/field_type"
 	"testing"
 )
 

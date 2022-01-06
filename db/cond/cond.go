@@ -1,6 +1,6 @@
 package cond
 
-import "code.byted.org/apaas/goapi_core/db/op"
+import "github.com/bytedance/kldx-core/db/op"
 
 type A []interface{}
 type M map[string]interface{}

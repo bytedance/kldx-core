@@ -1,7 +1,7 @@
 package cond
 
 import (
-	"code.byted.org/apaas/goapi_core/db/op"
+	"github.com/bytedance/kldx-core/db/op"
 )
 
 type Logic struct {

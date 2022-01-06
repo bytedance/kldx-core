@@ -1,7 +1,7 @@
 package file
 
 import (
-	"code.byted.org/apaas/goapi_core/common/utils"
+	"github.com/bytedance/kldx-core/common/utils"
 	"os"
 	"testing"
 )
