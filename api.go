@@ -1,8 +1,8 @@
 package core
 
 import (
-	dbImpl "code.byted.org/apaas/goapi_core/db/impl"
-	rs "code.byted.org/apaas/goapi_core/resources"
+	dbImpl "github.com/bytedance/kldx-core/db/impl"
+	rs "github.com/bytedance/kldx-core/resources"
 )
 
 var (

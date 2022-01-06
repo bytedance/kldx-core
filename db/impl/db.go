@@ -1,7 +1,7 @@
 package record_impl
 
 import (
-	"code.byted.org/apaas/goapi_core/db"
+	"github.com/bytedance/kldx-core/db"
 )
 
 type DB struct{}
