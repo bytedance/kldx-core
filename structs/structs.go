@@ -27,5 +27,5 @@ type FileUploadResult struct {
 	FileId string `json:"fileId"`
 	Type   string `json:"type"`
 	Name   string `json:"name"`
-	Size   int `json:"size"`
+	Size   int    `json:"size"`
 }

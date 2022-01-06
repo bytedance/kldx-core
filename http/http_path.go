@@ -1,8 +1,8 @@
 package http
 
 import (
-	cConstants "github.com/kldx/common/constants"
-	cUtils "github.com/kldx/common/utils"
+	cConstants "code.byted.org/apaas/goapi_common/constants"
+	cUtils "code.byted.org/apaas/goapi_common/utils"
 	"strconv"
 	"strings"
 )

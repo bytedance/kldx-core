@@ -1,11 +1,9 @@
-package record
+package db
 
-import (
-	"github.com/kldx/core/structs"
-)
+import "code.byted.org/apaas/goapi_core/structs"
 
-type AsyncTaskResult struct {
-	TaskId int64 `json:"taskID"`
+type IDB interface {
+	Object(objectApiName string) IObject
 }
 
 type IObject interface {
@@ -25,7 +23,7 @@ type IObject interface {
 	// query related
 	Where(condition interface{}) IQuery
 	Offset(offset int64) IQuery
-	Limit(offset int64) IQuery
+	Limit(limit int64) IQuery
 	OrderBy(fieldApiNames ...string) IQuery
 	OrderByDesc(fieldApiNames ...string) IQuery
 	Select(fieldApiNames ...string) IQuery

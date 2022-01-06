@@ -1,10 +1,10 @@
-package resources
+package file
 
 import (
 	"bytes"
-	cExceptions "github.com/kldx/common/exceptions"
-	"github.com/kldx/core/http/openapi"
-	"github.com/kldx/core/structs"
+	cExceptions "code.byted.org/apaas/goapi_common/exceptions"
+	"code.byted.org/apaas/goapi_core/http/openapi"
+	"code.byted.org/apaas/goapi_core/structs"
 	"io"
 	"os"
 )
@@ -16,7 +16,7 @@ type IFile interface {
 	Download(fileId string) ([]byte, error)
 }
 
-type File struct {}
+type File struct{}
 
 func NewFile() *File {
 	return &File{}
@@ -41,4 +41,3 @@ func (f *File) UploadByBuffer(fileName string, buffer []byte) (*structs.FileUplo
 func (f *File) Download(fileId string) ([]byte, error) {
 	return openapi.DownloadFile(fileId)
 }
-

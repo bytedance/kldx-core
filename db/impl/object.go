@@ -1,12 +1,12 @@
 package record_impl
 
 import (
-	cExceptions "github.com/kldx/common/exceptions"
-	"github.com/kldx/core/common/constants"
-	"github.com/kldx/core/http/openapi"
-	"github.com/kldx/core/record"
-	op "github.com/kldx/core/record/operator"
-	"github.com/kldx/core/structs"
+	cExceptions "code.byted.org/apaas/goapi_common/exceptions"
+	"code.byted.org/apaas/goapi_core/common/constants"
+	"code.byted.org/apaas/goapi_core/db"
+	"code.byted.org/apaas/goapi_core/db/op"
+	"code.byted.org/apaas/goapi_core/http/openapi"
+	"code.byted.org/apaas/goapi_core/structs"
 	"encoding/json"
 	"reflect"
 )
@@ -63,27 +63,27 @@ func (o *Object) FindOne(record interface{}) error {
 	return newQuery(o.objectApiName, o.err).FindOne(record)
 }
 
-func (o *Object) Where(condition interface{}) record.IQuery {
+func (o *Object) Where(condition interface{}) db.IQuery {
 	return newQuery(o.objectApiName, o.err).Where(condition)
 }
 
-func (o *Object) Offset(offset int64) record.IQuery {
+func (o *Object) Offset(offset int64) db.IQuery {
 	return newQuery(o.objectApiName, o.err).Offset(offset)
 }
 
-func (o *Object) Limit(limit int64) record.IQuery {
+func (o *Object) Limit(limit int64) db.IQuery {
 	return newQuery(o.objectApiName, o.err).Limit(limit)
 }
 
-func (o *Object) OrderBy(fieldApiNames ...string) record.IQuery {
+func (o *Object) OrderBy(fieldApiNames ...string) db.IQuery {
 	return newQuery(o.objectApiName, o.err).OrderBy(fieldApiNames...)
 }
 
-func (o *Object) OrderByDesc(fieldApiNames ...string) record.IQuery {
+func (o *Object) OrderByDesc(fieldApiNames ...string) db.IQuery {
 	return newQuery(o.objectApiName, o.err).OrderByDesc(fieldApiNames...)
 }
 
-func (o *Object) Select(fieldApiNames ...string) record.IQuery {
+func (o *Object) Select(fieldApiNames ...string) db.IQuery {
 	return newQuery(o.objectApiName, o.err).Select(fieldApiNames...)
 }
 
@@ -174,7 +174,7 @@ func (q *Query) FindOne(record interface{}) error {
 	return json.Unmarshal(recordStr, &record)
 }
 
-func (q *Query) Where(condition interface{}) record.IQuery {
+func (q *Query) Where(condition interface{}) db.IQuery {
 	if q.err != nil {
 		return q
 	}
@@ -201,7 +201,7 @@ func (q *Query) Where(condition interface{}) record.IQuery {
 	return q
 }
 
-func (q *Query) Offset(offset int64) record.IQuery {
+func (q *Query) Offset(offset int64) db.IQuery {
 	if q.err != nil {
 		return q
 	}
@@ -214,7 +214,7 @@ func (q *Query) Offset(offset int64) record.IQuery {
 	return q
 }
 
-func (q *Query) Limit(limit int64) record.IQuery {
+func (q *Query) Limit(limit int64) db.IQuery {
 	if q.err != nil {
 		return q
 	}
@@ -227,7 +227,7 @@ func (q *Query) Limit(limit int64) record.IQuery {
 	return q
 }
 
-func (q *Query) OrderBy(fieldApiNames ...string) record.IQuery {
+func (q *Query) OrderBy(fieldApiNames ...string) db.IQuery {
 	if q.err != nil {
 		return q
 	}
@@ -241,7 +241,7 @@ func (q *Query) OrderBy(fieldApiNames ...string) record.IQuery {
 	return q
 }
 
-func (q *Query) OrderByDesc(fieldApiNames ...string) record.IQuery {
+func (q *Query) OrderByDesc(fieldApiNames ...string) db.IQuery {
 	if q.err != nil {
 		return q
 	}
@@ -255,7 +255,7 @@ func (q *Query) OrderByDesc(fieldApiNames ...string) record.IQuery {
 	return q
 }
 
-func (q *Query) Select(fieldApiNames ...string) record.IQuery {
+func (q *Query) Select(fieldApiNames ...string) db.IQuery {
 	if q.err != nil {
 		return q
 	}
