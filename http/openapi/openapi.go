@@ -2,12 +2,12 @@ package openapi
 
 import (
 	"bytes"
+	"encoding/json"
 	cConstants "github.com/bytedance/kldx-common/constants"
 	cExceptions "github.com/bytedance/kldx-common/exceptions"
 	cHttp "github.com/bytedance/kldx-common/http"
 	"github.com/bytedance/kldx-core/http"
 	"github.com/bytedance/kldx-core/structs"
-	"encoding/json"
 	"github.com/tidwall/gjson"
 	"io"
 	"mime/multipart"
